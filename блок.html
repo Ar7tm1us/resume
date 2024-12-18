@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Lehenkyi - Junior QA</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #d3d3d3, #ffffff);
+            color: #333;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -10%;
+            width: 200px;
+            height: 200px;
+            background: #ffffff;
+            opacity: 0.2;
+            border-radius: 50%;
+        }
+        body::after {
+            content: "";
+            position: absolute;
+            bottom: -20%;
+            right: -15%;
+            width: 300px;
+            height: 300px;
+            background: #ffffff;
+            opacity: 0.2;
+            border-radius: 50%;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 8px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1a73e8;
+        }
+        section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            opacity: 0.98;
+        }
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .skill {
+            position: relative;
+            padding: 10px 0;
+        }
+        .skill h3 {
+            margin: 0 0 10px;
+        }
+        .skill-bar {
+            position: relative;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            background: linear-gradient(to right, #1a73e8, #009688);
+            width: 0;
+            animation: fill-bar 2s forwards;
+        }
+        @keyframes fill-bar {
+            from { width: 0; }
+            to { width: 90%; }
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 5px 0;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+        }
+        .contact a {
+            color: #1a73e8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #009688;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Artem Lehenkyi</h1>
+    <p>Junior QA Engineer</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Based in Kiev/remote, I am seeking a QA Engineer position to apply my knowledge and skills while continuing to grow professionally. With hands-on experience in manual and automated testing, I am passionate about delivering high-quality products.</p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <h3>Software Testing Tools</h3>
+            <div class="skill-bar"><span style="width: 80%;"></span></div>
+        </div>
+        <div class="skill">
+            <h3>API Testing</h3>
+            <div class="skill-bar"><span style="width: 90%;"></span></div>
+        </div>
+        <div class="skill">
+            <h3>Version Control</h3>
+            <div class="skill-bar"><span style="width: 75%;"></span></div>
+        </div>
+        <div class="skill">
+            <h3>Test Management Systems</h3>
+            <div class="skill-bar"><span style="width: 85%;"></span></div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+        <div class="job">
+            <h3>IT Soft Development (June 2024 - Present)</h3>
+            <ul>
+                <li>Manual functional testing of web and mobile applications</li>
+                <li>API testing using Postman and Swagger</li>
+                <li>Created and maintained test documentation</li>
+                <li>Collaborated with team members to achieve top product quality</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Phone: +380660011696</p>
+    <p>Email: <a href="mailto:artemlegenkiy123@gmail.com">artemlegenkiy123@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/artem-lehenkyi-968978333/" target="_blank">Artem Lehenkyi</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Artem Lehenkyi</p>
+</footer>
+
+</body>
+</html>
